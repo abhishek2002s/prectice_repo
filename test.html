@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Bar</title>
+    <style>
+        body {
+            background-color: #111;
+            color: #fff;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .icon-bar {
+            position: fixed;
+            top: 50%;
+            left: -100%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            z-index: 10;
+            transition: left 0.5s;
+        }
+
+        .icon-bar.show {
+            left: 20px;
+        }
+/* 
+        .right .show{
+            left: 150px;
+        } */
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .icon:hover {
+            background-color: #333;
+        }
+
+        .icon svg {
+            width: 20px;
+            height: 20px;
+            fill: #fff;
+        }
+
+        .arrow {
+            position: fixed;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 11;
+        }
+
+        #right{
+            background-color: red;
+            opacity: 0;
+        }
+        
+   
+        .arrow svg {
+            width: 20px;
+            height: 20px;
+            fill: #fff;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const arrow = document.querySelector('.arrow');
+            // const right = document.querySelector('.right');
+            const iconBar = document.querySelector('.icon-bar');
+
+            arrow.addEventListener('click', () => {
+                iconBar.classList.toggle('show');
+                arrow.style.opacity = 0;
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="icon-bar">
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-11v12h11v-12zm-2 7h-7v-2h7v2zm0 3h-7v-2h7v2z"/></svg>
+        </div>
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10s-10-4.48-10-10s4.48-10 10-10zm0-2c-6.63 0-12 5.37-12 12s5.37 12 12 12s12-5.37 12-12s-5.37-12-12-12z"/></svg>
+        </div>
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-5l2.5-5l2.5 5h-5zm-6-1.5v-4h2.5v4h-2.5zm10 1.5v4h-2.5v-4h2.5z"/></svg>
+        </div>
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10s-10-4.48-10-10s4.48-10 10-10zm0-2c-6.63 0-12 5.37-12 12s5.37 12 12 12s12-5.37 12-12s-5.37-12-12-12z"/></svg>
+        </div>
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10s-10-4.48-10-10s4.48-10 10-10zm0-2c-6.63 0-12 5.37-12 12s5.37 12 12 12s12-5.37 12-12s-5.37-12-12-12z"/></svg>
+        </div>
+    </div>
+    <div class="arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.1717 12.0005L9.34326 9.17203L10.7575 7.75781L15.0001 12.0005L10.7575 16.2431L9.34326 14.8289L12.1717 12.0005Z"></path></svg>
+    </div>
+    <div class="arrow" id="right">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.8284 12.0005L14.6569 14.8289L13.2426 16.2431L9 12.0005L13.2426 7.75781L14.6569 9.17203L11.8284 12.0005Z"></path></svg>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    left: -100%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 10;
+    transition: left 0.5s;
+}
+
+.icon-bar.show {
+    left: 15px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: #333;
+}
+
+.icon svg {
+    width: 20px;
+    height: 20px;
+    /* fill: rgb(247, 211, 8); */
+    /* fill:#100600; */
+    fill:#c37b51;
+}
+.arrow {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 11;
+    left: 15px;
+}
+
+.arrow svg {
+    width: 20px;
+    height: 20px;
+    fill:#c37b51;
+}
+
+.arrow:hover{
+    background-color: #333;
+}
+
+
+.right-arrow {
+    left: 80px;
+}
+
+.right-arrow svg {
+    transform: rotate(180deg);
+}

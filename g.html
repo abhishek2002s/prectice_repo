@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Scrolling Images</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .main-heading {
+            font-size: 4em;
+            font-weight: bold;
+            position: relative;
+            top: 20px;
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .images img {
+            width: 30%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .contact {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+        .contact a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+        .navigation, .call, .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+            font-size: 1em;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.8em;
+            text-align: center;
+        }
+        .scrolling-images {
+            overflow: hidden;
+            white-space: nowrap;
+            margin-top: 20px;
+        }
+        .scrolling-images img {
+            display: inline-block;
+            height: 200px;
+            margin: 0 10px;
+            animation: scroll 10s linear infinite;
+        }
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-heading">Drive the dream</div>
+        <div class="images">
+            <img src="https://via.placeholder.com/300x200" alt="Car 1">
+            <img src="https://via.placeholder.com/300x200" alt="Car 2">
+            <img src="https://via.placeholder.com/300x200" alt="Car Interior">
+        </div>
+        <div class="contact">
+            Let's Talk.<br>
+            <a href="mailto:CustomerCareAmerica@lamborghini.com">CustomerCareAmerica@lamborghini.com</a>
+        </div>
+        <div class="navigation">
+            <div>Models</div>
+            <div>News</div>
+            <div>Ownership</div>
+            <div>Dealership</div>
+            <div>Motorsport</div>
+            <div>Museum</div>
+        </div>
+        <div class="call">
+            <div>INTERNATIONAL<br>+39 051 9597282 (GMT+1)</div>
+            <div>NORTH AMERICA<br>+1 866 681 6276 (EST)</div>
+            <div>CHINA<br>+86 4001166606</div>
+            <div>JAPAN<br>+81 (0)120 988 889 (JST)</div>
+        </div>
+        <div class="social-media">
+            <div>INSTAGRAM</div>
+            <div>X</div>
+            <div>DISCORD</div>
+            <div>TIKTOK</div>
+            <div>LINKEDIN</div>
+            <div>YOUTUBE</div>
+            <div>FACEBOOK</div>
+            <div>THREADS</div>
+        </div>
+        <div class="scrolling-images">
+            <img src="https://via.placeholder.com/200x100" alt="Scrolling Image 1">
+            <img src="https://via.placeholder.com/200x100" alt="Scrolling Image 2">
+            <img src="https://via.placeholder.com/200x100" alt="Scrolling Image 3">
+            <img src="https://via.placeholder.com/200x100" alt="Scrolling Image 4">
+            <img src="https://via.placeholder.com/200x100" alt="Scrolling Image 5">
+        </div>
+        <div class="footer">
+            COPYRIGHT © 2024 ALL RIGHTS RESERVED<br>
+            Consumption and emission values of all vehicles promoted on this page*: Fuel consumption combined: 19.5-11.6 l/100km; Power consumption combined: 10.1 kWh/100 Km; CO2 emissions combined: 440-276 g/km; CO2 Efficiency
+        </div>
+    </div>
+</body>
+</html>

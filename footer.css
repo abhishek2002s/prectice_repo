@@ -1,0 +1,250 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+
+footer{
+    cursor: pointer;
+    width: 97%;
+    margin: auto;
+}
+
+.header-top{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vw;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.header-top .main-heading{
+    position: absolute;
+    z-index: 9999;
+    font-size: 10.9vw;
+    left: 10.67%;
+    top: -14%;
+    scale: 1.27;
+    font-weight: 400;
+    color: rgb(235, 233, 233);
+}
+
+.header-top p{
+    font-size: 2.3vw;
+    margin-top: 15px;
+    margin-bottom: 2px;
+}
+
+.images {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.images img {
+    display: inline-block;
+    height: 220px;
+    margin: 0;
+    animation: scroll 10s linear infinite;
+    background-size: cover;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.images img {
+    width: 30%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.header-top .bottom{
+    font-size: 7vw;
+    letter-spacing: 8px;
+    margin-top: 0;
+    padding: 0;
+
+}
+.header-top a{
+    text-decoration: underline;
+    font-size: 1.87vw;
+    color: white;
+}
+
+.header-top a span svg{
+    width: 26px;
+    text-align: center;
+}
+
+
+#middle-footer{
+margin-top: 1vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#middle-footer .section1{
+    /* font-size: 1.2vw; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* align-items: center; */
+    /* width: 20%; */
+}
+.section1 .parent-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.section1 .navi{
+    /* margin-top: 30px; */
+}
+.section1 .navi p{
+    font-size: 1.2vw;
+    /* margin-top: 0px; */
+    color: grey;
+    font-weight: bold;
+    /* font-size: 1.1vw;     */
+    text-transform: uppercase;
+}
+
+
+.section1 .navi1 p{
+    text-transform: uppercase;
+}
+
+.section1 .navi1 div{
+    text-transform: capitalize;
+}
+
+#middle-footer .section2{
+    font-size: 1.2vw;
+    /* background-color: red; */
+    width: 32%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section2 .call {
+    margin-top: 12px;
+    text-transform: uppercase;
+}
+
+.section2 .call p{
+    margin-top: 12px;
+    text-transform: uppercase;
+    /* margin-top: 0px; */
+    color: grey;
+    font-weight: bold;
+    font-size: 1.1vw;
+}
+.section2 .call div{
+    margin-bottom: 4px;
+}
+
+.section2 .call div:nth-child(3){
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+
+.section2 .call2{
+    margin-top: 53px;
+}
+
+.section2 .call2 div{
+    margin-bottom: 4px;
+}
+
+.section2 .call2 div:nth-child(2){
+    margin-bottom: 12px;
+}
+
+
+#middle-footer .section3{
+    font-size: 1.2vw;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    width: 18%;
+}
+
+
+
+.section3 .social1 div{
+    width: fit-content;
+    padding: 3px;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.section3 .social1 div:hover{
+    background-color: white;
+    color: #111;
+}
+
+
+.section3 .social2  .x{
+    border-radius: 50%;
+}
+.section3 .social2 div{
+    width: fit-content;
+    padding: 3px;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.section3 .social2 div:hover{
+    background-color: white;
+    color: #111;
+}
+
+.middle-footer2{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3vw;
+}
+
+.middle-footer2 img{
+    height:72px;
+    background-size: cover;
+    background-color: white;
+    /* background-color: white; */
+
+} 
+
+.scrolling-text-container {
+    margin-top: 1vw;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 1px solid white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.scrolling-text {
+    display: inline-block;
+    animation: scroll 40s linear infinite;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
