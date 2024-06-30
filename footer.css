@@ -31,7 +31,7 @@ footer{
     z-index: 9999;
     font-size: 10.9vw;
     left: 10.67%;
-    top: -14%;
+    top: -17%;
     scale: 1.27;
     font-weight: 400;
     color: rgb(235, 233, 233);
@@ -89,19 +89,26 @@ footer{
 
 
 #middle-footer{
-margin-top: 1vw;
+    margin-top: 4vw;
     display: flex;
     justify-content: space-between;
 }
 
 #middle-footer .section1{
-    /* font-size: 1.2vw; */
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    /* align-items: center; */
-    /* width: 20%; */
+    gap: 30px;
 }
+
+.section1 p{
+    margin: 0;
+}
+
+.section1 .navtag{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
 .section1 .parent-nav{
     display: flex;
     justify-content: center;
@@ -109,123 +116,127 @@ margin-top: 1vw;
     gap: 35px;
 }
 
-.section1 .navi{
-    /* margin-top: 30px; */
+.parent-nav .navi{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
+
 .section1 .navi p{
-    font-size: 1.2vw;
-    /* margin-top: 0px; */
-    color: grey;
-    font-weight: bold;
-    /* font-size: 1.1vw;     */
-    text-transform: uppercase;
-}
-
-
-.section1 .navi1 p{
-    text-transform: uppercase;
-}
-
-.section1 .navi1 div{
     text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 #middle-footer .section2{
     font-size: 1.2vw;
-    /* background-color: red; */
     width: 32%;
     display: flex;
     justify-content: space-between;
 }
 
-.section2 .call {
-    margin-top: 12px;
-    text-transform: uppercase;
-}
-
-.section2 .call p{
-    margin-top: 12px;
-    text-transform: uppercase;
-    /* margin-top: 0px; */
-    color: grey;
-    font-weight: bold;
-    font-size: 1.1vw;
-}
-.section2 .call div{
-    margin-bottom: 4px;
-}
-
-.section2 .call div:nth-child(3){
-    line-height: 1;
-    margin-bottom: 12px;
-}
-
-
-.section2 .call2{
-    margin-top: 53px;
-}
-
-.section2 .call2 div{
-    margin-bottom: 4px;
-}
-
-.section2 .call2 div:nth-child(2){
-    margin-bottom: 12px;
-}
-
-
-#middle-footer .section3{
-    font-size: 1.2vw;
+.call1{
     display: flex;
-    justify-content: space-between;
-    /* background-color: red; */
-    width: 18%;
+    flex-direction: column;
+    gap:8px;
+}
+.gap{
+    gap: 30px;
+}
+.call1 p:nth-child(1){
+    text-transform: uppercase;
+    font-size: 21px;
 }
 
+.call1 p:nth-child(2){
+    font-size: 18px;
+}
 
+.social {
+    display: flex;
+}
 
-.section3 .social1 div{
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6vw;  
+}
+
+ul li{
+    text-align: center;
+    display: inline-block;
+    list-style: none;
+    padding: 0.4vw 0.9vw;
+    color: white;
+    border: solid 1px rgb(181, 179, 179);
+    border-radius: 50px;
+    position: relative;
     width: fit-content;
-    padding: 3px;
-    border: 1px solid white;
-    border-radius: 20px;
-    margin-top: 10px;
+    overflow: hidden;
 }
-.section3 .social1 div:hover{
+ul li::after{
+    content: "";
+    width: 100%;
+    height: 100%;
     background-color: white;
-    color: #111;
+    font-weight: 100;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50px;
+    transition: all 0.2s ease;
+}
+ul li:hover::after{
+    bottom: 0;
+}
+ul li:hover{
+    cursor: pointer;
 }
 
-
-.section3 .social2  .x{
-    border-radius: 50%;
+ul li a{
+    position: relative;
+    color:white;
+    text-decoration: none;
+    font-family: neuhassmediu;
+    z-index: 9;
+    font-size: 1vw;
+    font-weight: 600;
 }
-.section3 .social2 div{
-    width: fit-content;
-    padding: 3px;
-    border: 1px solid white;
-    border-radius: 20px;
-    margin-top: 10px;
-}
-
-.section3 .social2 div:hover{
-    background-color: white;
-    color: #111;
+ul li:hover a{
+    color: black;
 }
 
 .middle-footer2{
     display: flex;
     justify-content: space-between;
-    padding-top: 3vw;
+    padding-top: 2vw;
 }
 
-.middle-footer2 img{
+.middle-footer2 p{
+    font-weight: 600;
+}
+.middle-footer2  .img1{
     height:72px;
-    background-size: cover;
-    background-color: white;
+    /* background-size: cover; */
     /* background-color: white; */
+    /* outline: white; */
+    width: 72px;
+    overflow: hidden;
 
 } 
+.middle-footer2  .img1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+
+
+.middle-footer2 p{
+    margin-top: 20px;
+}
 
 .scrolling-text-container {
     margin-top: 1vw;
@@ -233,7 +244,7 @@ margin-top: 1vw;
     overflow: hidden;
     white-space: nowrap;
     border: 1px solid white;
-    padding: 10px;
+    padding: 6px;
     box-sizing: border-box;
 }
 .scrolling-text {
